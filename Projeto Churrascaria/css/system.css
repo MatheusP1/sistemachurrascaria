@@ -1,0 +1,81 @@
+body{
+	overflow: hidden;
+	margin-left: 0px;
+}
+
+font{
+
+	font-size: 18px;
+}
+
+#campo1{
+
+	position: absolute; top:110px; left: 10px;
+}
+
+
+#campo2{
+
+	position: absolute; top:165px; left: 10px;
+}
+
+
+#campo3{
+
+	position: absolute; top:210px; left: 10px;
+}
+
+
+#campo4{
+
+	position: absolute; top:265px; left: 10px;
+}
+
+
+#campo5{
+
+	position: absolute; top:315px; left: 10px;
+}
+
+#campo6{
+
+	position: absolute; top:370px; left: 10px;
+}
+
+#campo7{
+
+	position: absolute; top:425px; left: 10px;
+}
+
+#imagem{
+	position: fixed; left: 200px; top: 110px;
+	width: 25px;
+	height: 25px;
+}
+
+.linha-vertical1 {
+  height: 768px;/*Altura da linha*/
+  margin-top: 0px;
+  border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  position: absolute; left: 383px;
+}
+
+.linha-vertical2 {
+  height: 768px;/*Altura da linha*/
+  margin-top: 0px;
+  border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  position: absolute; left: 766px;
+}
+
+#iconeagua{
+
+	position: absolute; left: 800px; top: 150px;
+	height: 80px;
+	width: 80px;
+}
+
+@font-face{
+	font-family: system;
+	src: url(../font/Roboto-Medium.ttf);
+}
+
