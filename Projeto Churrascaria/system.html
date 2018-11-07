@@ -5,42 +5,85 @@
 </head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css\system.css">
-<img src="img\system-banner.png">
+<script src="js/table.js"></script>
+
+<img id="banner" src="img\SIS.png" align="center">
 <font face = "system">
 	<form>
-		<div id="campo1">
-			Valor Rodízio <input type="text" name="valorRodizio" size="5">
-			<input type="image" id="imagem" name="addPessoas" src="img\icons\add-icon.png">
-		</div>
-
-		<div id="campo2">
-			Valor Parcial
-			<input type="text" name="valorParcial" size="5"><br/>
-		</div>
-		
-		<div id="campo4">
-			Adicional
-			<input type="text" name="acompanhamentos" size="5"><br/>
-		</div>
-		<div id="campo5">
-			Serviços
-			<input type="text" name="servicos" size="5"><br/>
-		</div>
-
-		<div id="campo6">
+		<div id="campos">
+			Valor Rodízio<br/><br/>
+			Valor Parcial<br/><br/>
+			Adicional<br/><br/>
+			Serviços<br/><br/>
 			Total a pagar
-			<input type="text" name="totalPagar" size="5"><br/>
-		</div>
-		
-		<div id="campo7">
-			<input type="submit" name="fecharConta" value="Fechar Conta" size="5">
 		</div>
 
-		<input type="image" id="iconeagua" name="agua" src="img\icons\agua-icon.png">
-		Água
+		<div id="input">
+			<input type="text" name="valorRodizio" size="5">&nbsp&nbsp
+			<input type="image" id="add" name="addPessoas" src="img\icons\add-icon.png" ><br/><br/>
+			<input type="text" name="valorParcial" size="5"><br/><br/>
+			<input type="text" name="acompanhamentos" size="5"><br/><br/>
+			<input type="text" name="servicos" size="5"><br/><br/>
+			<input type="text" name="totalPagar" size="5"><br/><br/><br/>
+			<input type="submit" name="fecharConta" value="Fechar Conta" >
+		</div>	
+		<p id="categoria1">BEBIDAS:</p>
+		<div id="bebida">
+			<input type="image" name="agua" src="img\cardapio\agua-icon.png" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="snatural" src="img\cardapio\snatural.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="slata" src="img\cardapio\slata.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="rlata" src="img\cardapio\rlata.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px"><br>
+			<input type="image" name="rgarrafa" src="img\cardapio\rgarrafa.jpeg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="cerveja" src="img\cardapio\cerveja.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="sake" src="img\cardapio\sake.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="cachaca" src="img\cardapio\cachaca.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">
+		</div>
+		<p id="categoria2" >SOBREMESAS:</p>
+		<div id="sobremesa">
+			<input type="image" name="pacoca" src="img\cardapio\pacoca.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">
+			<input type="image" name="tortinha" src="img\cardapio\tortinha.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">
+			<input type="image" name="paletas" src="img\cardapio\paletas.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">
+			<input type="image" name="bolo" src="img\cardapio\bolo.jpg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">
+			<input type="image" name="sorvete" src="img\cardapio\sorvete.jpeg" onclick="inserirLinha();return false;
+			"style="width: 80px; height: 80px">
+			
+		</div>
 	</form>
 </font>
+<table id="tabela">
+	<thead>
+		<tr>
+			<th>Produto</th>
+			<th>Preço</th>
+		</tr>
+	</thead>
+	<tbody>
+						
+	</tbody>
+</table>
+
 <div class="linha-vertical1"></div>
 <div class="linha-vertical2"></div>
 </body>
 </html>
+
+<!--<input type="image" name="agua" src="img\cardapio\agua-icon.png" onclick="inserirLinha();return false;">
+			<input type="image" name="snatural" src="img\cardapio\snatural.jpg" onclick="inserirLinha(snatural);return false;">
+			<input type="image" name="slata" src="img\cardapio\slata.jpg" onclick="inserirLinha(slata);return false;">
+			<input type="image" name="rlata" src="img\cardapio\rlata.jpg" onclick="inserirLinha(rlata);return false;">
+			<input type="image" name="rgarrafa" src="img\cardapio\rgarrafa.jpeg" onclick="inserirLinha(rgarrafa);return false;">
+			<input type="image" name="cerveja" src="img\cardapio\cerveja.jpg" onclick="inserirLinha(cerveja);return false;">
+			<input type="image" name="sake" src="img\cardapio\sake.jpg" onclick="inserirLinha(sake);return false;">
+			<input type="image" name="cachaca" src="img\cardapio\cachaca.jpg" onclick="inserirLinha(cachaca);return false;">-->

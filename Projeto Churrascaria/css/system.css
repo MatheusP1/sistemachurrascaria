@@ -1,54 +1,45 @@
 body{
 	overflow: hidden;
 	margin-left: 0px;
+	background-color: #f7efe0;
 }
 
 font{
 
-	font-size: 18px;
+	font-size: 19px;
 }
 
-#campo1{
+#campos{
 
-	position: absolute; top:110px; left: 10px;
+	position: absolute;  left: 20px; top: 150px;
 }
 
-
-#campo2{
-
-	position: absolute; top:165px; left: 10px;
+#input{
+	position: absolute; left: 250px; top: 150px;
 }
 
-
-#campo3{
-
-	position: absolute; top:210px; left: 10px;
+#banner{
+	max-width:200%;
+	height:120px;
+	width: auto;
 }
 
-
-#campo4{
-
-	position: absolute; top:265px; left: 10px;
+#categoria1{
+	position: absolute; left: 800px; top: 150px;
+}
+#categoria2{
+	position: absolute; left: 800px; top: 400px;
 }
 
-
-#campo5{
-
-	position: absolute; top:315px; left: 10px;
+#bebida{
+	position:fixed; left: 800px; top: 200px;
+}
+#sobremesa{
+	position:fixed; left: 800px; top: 450px;
 }
 
-#campo6{
-
-	position: absolute; top:370px; left: 10px;
-}
-
-#campo7{
-
-	position: absolute; top:425px; left: 10px;
-}
-
-#imagem{
-	position: fixed; left: 200px; top: 110px;
+#add{
+	position: fixed; left: 350px; top: 151px;
 	width: 25px;
 	height: 25px;
 }
@@ -67,15 +58,22 @@ font{
   position: absolute; left: 766px;
 }
 
-#iconeagua{
 
-	position: absolute; left: 800px; top: 150px;
-	height: 80px;
-	width: 80px;
-}
 
 @font-face{
 	font-family: system;
 	src: url(../font/Roboto-Medium.ttf);
 }
+
+table {
+	border: 2px black solid;
+	width: 27%;
+	position:absolute;left: 390px; top: 150px;
+}
+
+th,td{
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
 
