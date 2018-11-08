@@ -1,5 +1,5 @@
 body{
-	overflow: hidden;
+	overflow-x: hidden;
 	margin-left: 0px;
 	background-color: #f7efe0;
 }
@@ -32,14 +32,14 @@ font{
 }
 
 #bebida{
-	position:fixed; left: 800px; top: 200px;
+	position:absolute; left: 800px; top: 200px;
 }
 #sobremesa{
-	position:fixed; left: 800px; top: 450px;
+	position:absolute; left: 800px; top: 450px;
 }
 
 #add{
-	position: fixed; left: 350px; top: 151px;
+	position: absolute; left: 90px; top: 1px;
 	width: 25px;
 	height: 25px;
 }
