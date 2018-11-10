@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css\system.css">
 <script src="js/table.js"></script>
 
-<img id="banner" src="img\SIS.png" align="center">
+<img src="img\system-banner.png" height="150" width="1366">
 <font face = "system">
 	<form>
 		<div id="campos">
@@ -16,48 +16,61 @@
 			Valor Parcial<br/><br/>
 			Serviços<br/><br/>
 			Total a pagar
+			<hr>
 		</div>
 
 		<div id="input">
-			<input id="1" type="text" name="valorRodizio" size="5" readonly="true">&nbsp&nbsp
-			<input type="image" id="add" name="addPessoas" src="img\icons\add-icon.png" onclick="rodizio(),att();return false" ><br/><br/>
+			<input id="1" type="text" name="valorRodizio" size="5" readonly="true">&nbsp&nbsp<br/><br/>
 			<input id="2" type="text" name="valorParcial" size="5" readonly="true"><br/><br/>
 			<input id="3" type="text" name="acompanhamentos" size="5" readonly="true" ><br/><br/>
 			<input id="4" type="text" name="servicos" size="5" readonly="true" ><br/><br/>
-			<input id="5" type="text" name="totalPagar" size="5" readonly="true"><br/><br/><br/>
-			<input type="button" name="fecharConta" value="Fechar Conta" onclick="fechar()">
-		</div>	
+			<input id="5" type="text" name="totalPagar" size="5" readonly="true">
+		</div>
+		<!-- Botoes -->
+		<input type="button" id="fecharbtn" name="fecharConta" value="Fechar Conta" onclick="fechar()">
+		<input type="button" id="add" name="addPessoas" value="Adicionar" onclick="rodizio(),att();return false">
+		<input type="button" id="logout" name="addPessoas" value="Logout" onclick="window.location='index.html';">
+
+		<!-- Categoria de bebidas -->
+
 		<p id="categoria1">BEBIDAS:</p>
 		<div id="bebida">
 			<input type="image" name="agua" src="img\cardapio\agua-icon.png" onclick="inserirLinha('Agua',agua),att();return false;
-			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			<input type="image" name="snatural" src="img\cardapio\snatural.jpg" onclick="inserirLinha('Suco natural',snatural),att();return false;
-			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			<input type="image" name="slata" src="img\cardapio\slata.jpg" onclick="inserirLinha('Suco lata',slata),att();return false;
-			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			<input type="image" name="rlata" src="img\cardapio\rlata.jpg" onclick="inserirLinha('Refrigerante lata',rlata),att();return false;
-			"style="width: 80px; height: 80px"><br>
-			<input type="image" name="rgarrafa" src="img\cardapio\rgarrafa.jpeg" onclick="inserirLinha('Refrigerante garrafa',rgarrafa),att();return false;
-			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			<input type="image" name="cerveja" src="img\cardapio\cerveja.jpg" onclick="inserirLinha('Cerveja',cerveja),att();return false;
-			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			<input type="image" name="sake" src="img\cardapio\sake.jpg" onclick="inserirLinha('Caipirinha sake',sake),att();return false;
-			"style="width: 80px; height: 80px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			<input type="image" name="cachaca" src="img\cardapio\cachaca.jpg" onclick="inserirLinha('Caipirinha cachaça',cachaca),att();return false;
-			"style="width: 80px; height: 80px">
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<input type="image" name="snatural" src="img\cardapio\snatural.png" onclick="inserirLinha('Suco natural',snatural),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<input type="image" name="slata" src="img\cardapio\slata.png" onclick="inserirLinha('Suco lata',slata),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<input type="image" name="rlata" src="img\cardapio\rlata.png" onclick="inserirLinha('Refrigerante lata',rlata),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080"><br>
+
+			<input type="image" name="rgarrafa" src="img\cardapio\rgarrafa.png" onclick="inserirLinha('Refrigerante garrafa',rgarrafa),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<input type="image" name="cerveja" src="img\cardapio\cerveja.png" onclick="inserirLinha('Cerveja',cerveja),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<input type="image" name="sake" src="img\cardapio\sake.png" onclick="inserirLinha('Caipirinha sake',sake),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+			<input type="image" name="cachaca" src="img\cardapio\cachaca.png" onclick="inserirLinha('Caipirinha cachaça',cachaca),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">
 		</div>
-		<p id="categoria2" >SOBREMESAS:</p>
+		
+		<!-- Categoria de sobremesas -->
+		<p id="categoria2">SOBREMESAS:</p>
 		<div id="sobremesa">
-			<input type="image" name="pacoca" src="img\cardapio\pacoca.jpg" onclick="inserirLinha('Paçoca',pacoca),att();return false;
-			"style="width: 80px; height: 80px">
-			<input type="image" name="tortinha" src="img\cardapio\tortinha.jpg" onclick="inserirLinha('Tortinhas',tortinha),att();return false;
-			"style="width: 80px; height: 80px">
-			<input type="image" name="paleta" src="img\cardapio\paleta.jpg" onclick="inserirLinha('Paleta',paleta),att();return false;
-			"style="width: 80px; height: 80px">
-			<input type="image" name="bolo" src="img\cardapio\bolo.jpg" onclick="inserirLinha('Bolo',bolo),att();return false;
-			"style="width: 80px; height: 80px">
-			<input type="image" name="sorvete" src="img\cardapio\sorvete.jpeg" onclick="inserirLinha('Sorvete c/ Petit Gateau',sorvete),att();return false;
-			"style="width: 80px; height: 80px">
+			<input type="image" name="pacoca" src="img\cardapio\pacoca.png" onclick="inserirLinha('Paçoca',pacoca),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="tortinha" src="img\cardapio\tortinha.png" onclick="inserirLinha('Tortinhas',tortinha),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="paleta" src="img\cardapio\paleta.png" onclick="inserirLinha('Paleta',paleta),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="image" name="bolo" src="img\cardapio\bolo.png" onclick="inserirLinha('Bolo',bolo),att();return false;
+			"style="width: 100px; height: 100px; border: 3px solid #ff8080">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 			
 		</div>
 	</form>
